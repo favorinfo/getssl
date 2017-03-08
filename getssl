@@ -187,7 +187,7 @@
 # ----------------------------------------------------------------------------------------
 
 PROGNAME=${0##*/}
-VERSION="2.10"
+VERSION="2.10.0"
 
 # defaults
 ACCOUNT_KEY_LENGTH=4096
@@ -198,7 +198,7 @@ CHALLENGE_CHECK_TYPE="http"
 CHECK_ALL_AUTH_DNS="false"
 CHECK_REMOTE="true"
 CHECK_REMOTE_WAIT=0
-CODE_LOCATION="https://raw.githubusercontent.com/srvrco/getssl/master/getssl"
+CODE_LOCATION="https://raw.githubusercontent.com/favorinfo/getssl/master/getssl"
 CSR_SUBJECT="/"
 DEACTIVATE_AUTH="false"
 DEFAULT_REVOKE_CA="https://acme-v01.api.letsencrypt.org"
@@ -224,7 +224,7 @@ TEMP_UPGRADE_FILE=""
 TOKEN_USER_ID=""
 USE_SINGLE_ACL="false"
 VALIDATE_VIA_DNS=""
-WORKING_DIR=~/.getssl
+WORKING_DIR=${WORKING_DIR:=/opt/.getssl}
 _CHECK_ALL=0
 _CREATE_CONFIG=0
 _FORCE_RENEW=0
